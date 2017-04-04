@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="406.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Pane layoutX="10.0" layoutY="21.0" prefHeight="371.0" prefWidth="581.0" style="-fx-background-color: white;">
+         <children>
+            <JFXTextField fx:id="username" focusColor="#042279" layoutX="188.0" layoutY="86.0" prefHeight="29.0" prefWidth="205.0" promptText="Username" />
+            <JFXPasswordField fx:id="password" layoutX="188.0" layoutY="139.0" prefHeight="29.0" prefWidth="205.0" promptText="Password" />
+            <JFXButton fx:id="login" buttonType="RAISED" layoutX="238.0" layoutY="215.0" onAction="#makeLogin" prefHeight="41.0" prefWidth="106.0" ripplerFill="WHITE" style="-fx-background-color: green;" text="Log In " textFill="WHITE">
+               <font>
+                  <Font name="Arial Narrow" size="21.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>
